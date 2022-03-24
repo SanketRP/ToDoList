@@ -1,0 +1,73 @@
+<%- include("header") -%>
+
+<!-- Custom styles for this template -->
+<link
+    href="https://getbootstrap.com/docs/5.1/examples/sign-in/signin.css"
+    rel="stylesheet"
+/>
+<style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+<div class="text-center login-san">
+    <main class="form-signin">
+        <form action="/register" method="post" class="form-san">
+            <img
+                class="mb-4"
+                src="css/Notepad.png"
+                alt=""
+                width="72"
+                height="57"
+            />
+            <h1 class="h3 mb-3 fw-normal">SignUp</h1>
+
+            <div class="form-floating">
+                <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="First Name"
+                    name="fName"
+                />
+                <label for="floatingInput">First Name</label>
+            </div>
+            <div class="form-floating">
+                <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="Last Name"
+                    name="lName"
+                />
+                <label for="floatingInput">Last Name</label>
+            </div>
+            <div class="form-floating">
+                <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    name="username"
+                />
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input
+                    type="password"
+                    class="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                    name="password"
+                />
+                <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-dark" type="submit">
+                Register
+            </button>
+            <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
+        </form>
+    </main>
+</div>    
+
+<%- include("footer") -%>

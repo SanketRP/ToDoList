@@ -1,0 +1,18 @@
+<%- include("header") -%>
+
+<h1>YEAH BABY !!!
+    <br>
+    You Rock <%= namelist %></h1>
+    <% newListItems.forEach(function(item) { %>
+		<form action="/delete" method="post">
+			<div class="list-element">
+				<p>
+				<input type="checkbox" name="checkbox" value="<%= item._id %>" onChange="this.form.submit()">
+				<%= item.name %>
+				</p>		
+			</div>
+			<input type="hidden" name="listName" value="<%= listTitle %>"></input>
+		</form>
+		<% }) %>
+
+<%- include("footer") -%>
